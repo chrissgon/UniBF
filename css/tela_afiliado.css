@@ -1,0 +1,147 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/bg-telaAfiliado.jpg);
+    background-repeat: no-repeat;
+}
+
+/* BTN-FLOAT */
+.btn-float{
+    top: 0%;
+    margin: 80px 0 0 -20px;
+}
+
+/* CADASTRO */
+.cadastro{
+    width: 400px;
+    max-height: 450px;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+    padding: 0;
+}
+
+.cadastro::before{
+    content: "";
+    width: 400px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: #7bceae;
+    border-radius: 10px;
+    opacity: .9;
+    transform: translate(-25px, -25px);
+    z-index: -1;
+}
+
+/* header */
+.cadastro .header{
+    padding: 25px 25px 12px 25px;
+}
+
+.cadastro .header h1{
+    display: flex;
+    align-items: center;
+    color: #003059;
+    font-size: 1.5rem;
+}
+
+.cadastro .header h1 i{
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #003059;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+
+/* info */
+.cadastro .info{
+    width: 100%;
+    max-height: 400px;
+    align-items: center;
+    overflow-y: auto;
+    padding: 12px 25px 25px 25px;
+}
+
+.cadastro .info::-webkit-scrollbar{
+    display: none;
+}
+
+.cadastro .info .campo{
+    position: relative;
+    margin: 0 0 25px 0;
+}
+
+/* status */
+.cadastro .info .cnpj{
+    align-items: flex-end;
+} 
+.cadastro .info .campo .status{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    padding-right: 50px;
+}
+
+.cadastro .info .campo .status i{
+    position: absolute;
+    color: #7bceae;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: .3s all;
+}
+
+.cadastro .info .campo .status i.ativo{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* icon busca */
+.cadastro .info .campo .status i.busca{
+    animation: busca 1s ease infinite;
+}
+
+/* btn-email */
+.cadastro .info .email input{
+    padding-right: 75px;
+}
+
+.cadastro .info .campo .btn-email{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    color: #7bceae;
+    background: #fff;
+    border-radius: 100px;
+    cursor: pointer;
+    transform: translateX(-100%);
+    padding: 12.5px 25px 12.5px 12.5px;
+}
+
+.cadastro .info .campo .btn-email.remover{
+    color: #003059;
+}
+
+/* KEYFRAMES */
+@keyframes busca{
+    0%{
+        transform: scale(.7);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(.7);
+    }
+}

@@ -1,0 +1,51 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/bg-login.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+}
+
+/* LOGIN */
+.login{
+    width: 400px;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+    padding: 25px 25px 0 25px;
+}
+
+.login::before{
+    content: "";
+    width: 400px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: #7bceae;
+    border-radius: 10px;
+    opacity: .9;
+    z-index: -1;
+}
+
+.login h1{
+    display: flex;
+    align-items: center;
+    color: #003059;
+    font-size: 1.5rem;
+}
+
+.login h1 i{
+    margin-right: 15px;
+}
+
+/* campo */
+.login .campo{
+    margin-bottom: 10px;
+}
+.login .campo:last-child{
+    margin: 0;
+}

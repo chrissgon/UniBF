@@ -1,0 +1,85 @@
+/* MENU-MOBILE */
+/* info */
+.menu-mobile{
+    justify-content: space-between;
+}
+
+/* MENU */
+.menu{
+    width: 100%;
+    background: linear-gradient(to right, #003153, #044d81);
+    padding: 10px 25px 25px 25px;
+}
+
+/* btn-menu */
+.menu .btn-menu{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+/* info */
+.menu .info{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee;
+    padding: 0 50px 0 100px;
+}
+
+.menu .info h1{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.menu .info .data{
+    margin-bottom: 25px;
+}
+
+/* status */
+.menu .info .status{
+    width: 100%;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.menu .info .status p{
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003153;
+    background: #eee;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.menu .info .status p i{
+    margin-right: 10px;
+}
+
+/* CONTAINER */
+/* PROPOSTA */
+.proposta{
+    
+}
+
+.proposta h1{
+    font-size: 1.5rem;
+}
+
+/* MEDIAS */
+@media(max-width: 500px){
+    /* MENU */
+    .menu{
+        padding: 75px 25px 25px 25px;
+    }
+    /* info */
+    .menu .info{
+        padding: 0;
+    }
+}

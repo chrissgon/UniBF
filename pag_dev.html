@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Página em Desenvolvimento</title>
+
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="Área de Login">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* info */
+        .info{
+            position: relative;
+            text-align: center;
+            margin-top: 100px
+        }
+        .info h1{
+            color: #003153;
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        .info h1::before{
+            content: "";
+            width: 300px;
+            height: 60px;
+            display: block;
+            position: absolute;
+            background: #7bceae;
+            z-index: -1;
+        }
+        .info p{
+            position: relative;
+            color: #003153;
+            font-size: 1.2rem;
+            margin-top: 25px;
+            z-index: 1;
+        }
+        .info p::before{
+            content: "";
+            width: 100px;
+            height: 3px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50px;
+            background: #7bceae;
+            z-index: -1;
+        }
+        .info .bg{
+            width: 100%;
+            position: absolute;
+            top: 100px;
+            z-index: -1;
+        }
+
+        @media(max-width: 700px){
+            .info h1{
+                font-size: 2.5rem;
+            }
+            .info .bg{
+                top: 200px;
+            }
+        }
+    </style>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <!-- LOGO -->
+    <link rel="icon" href="img/logo.jpg">
+</head>
+<body>
+    <!-- INFO -->
+    <section class="info">
+        <h1>Página em Desenvolvimento</h1>
+        <p>Pedimos a sua compreensão</p>
+        <img src="img/bg-aviso.jpg" class="bg">
+    </section>
+</body>
+</html>

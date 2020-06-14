@@ -1,0 +1,721 @@
+/* BTN-FLOAT */
+.btn-float{
+    background: #4fce5d;
+}
+
+/* MENU MOBILE */
+.menu-mobile .aba.pesquisa .campo{
+    position: relative;
+    margin: 0;
+}
+
+.menu-mobile .aba.pesquisa .campo input{
+    height: 40px;
+    border-radius: 5px;
+    padding-right: 45px;
+}
+
+.menu-mobile .aba.pesquisa .campo button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 160px;
+    color: #003059;
+    background: #fff;
+    border-radius: 0 5px 5px 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* MENU */
+.menu{
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 0 50px;
+    z-index: 2;
+}
+
+.menu .logo{
+    height: 40px;
+    flex-direction: row;
+}
+
+.menu .logo img{
+    height: 100%;
+    margin-right: 40px;
+}
+
+/* guia */
+.menu .guia{
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu .guia .link, .menu .pesquisa .link{
+    flex-direction: row;
+    align-items: center;
+    color: #003153;
+    font-weight: 500;
+    white-space: nowrap;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.menu .guia .link i{
+    margin-left: 5px;
+}
+
+.menu .guia .link.ativo{
+    background: #7bceae;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+/* dropdown */
+.menu .guia .dropdown{
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.menu .guia .dropdown .sub{
+    width: 200px;
+    height: 0;
+    position: absolute;
+    top: 25px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    opacity: 0;
+    transition: .2s all;
+}
+
+.menu .guia .dropdown:hover .sub{
+    height: 120px;
+    opacity: 1;
+}
+
+.menu .guia .dropdown .sub a{
+    width: 100%;
+    color: #333;
+    padding: 15px;
+}
+
+.menu .guia .dropdown .sub a:first-child{
+    margin-top: 10px;
+}
+
+.menu .guia .dropdown .sub a:last-child{
+    margin-bottom: 10px;
+}
+
+.menu .guia .dropdown .sub a:hover{
+    background: #eee;
+}
+
+/* CONTAINER */
+/* HOME */
+.home{
+    background: #fff;
+}
+
+/* bg */
+.home .bg{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 100px;
+    left: 50vw;
+    overflow: hidden;
+}
+
+/* info */
+.home .info{
+    width: 700px;
+    margin: 200px 0 0 50px;
+    z-index: 1;
+}
+
+.home .info h4{
+    color: #003153;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: -75px 0 0 0;
+}
+
+.home .info h1{
+    color: #003153;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin: 25px 0;
+    
+}
+
+.home .info h3{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.home .info h3::before{
+    content: "";
+    width: 400px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    background: #7bceae;
+    transform: translate(-20px, -7px);
+    z-index: -1;
+}
+
+.home .info .btn-mec{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    background: #003059;
+    border-radius: 100px;
+}
+
+/* MOTIVOS */
+.motivos{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* item */
+.motivos .item{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 25px 50px 25px;
+}
+
+/* icon */
+.motivos .icon{
+    width: 80px;
+    height: 80px;
+}
+
+.motivos .icon img{
+    width: 100%;
+    height: 100%;
+}
+
+/* info */
+.motivos .item h3{
+    color: #003059;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+/* CATEGORIAS */
+.categorias{
+    align-items: center;
+    background: url(../img/bg-categorias.jpg);
+    background-repeat: no-repeat;
+    padding: 100px 25px 50px 25px;
+}
+
+/* icon */
+.categorias > .icon{
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+/* info */
+.categorias .info{
+    width: 900px;
+    text-align: center;
+
+}
+
+.categorias .info h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, .3);
+}
+
+.categorias .info .campo{
+    position: relative;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.categorias .info .campo input{
+    padding: 15px 100px 15px 25px;
+}
+
+.categorias .info .campo button{
+    width: 100px;
+    height: 49px;
+    position: absolute;
+    top: 0;
+    color: #003059;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    margin-left: -100px;
+}
+
+/* cursos */
+.categorias .cursos{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.categorias .cursos .item{
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: .2s all;
+    padding: 25px;
+    margin: 25px;
+}
+
+.categorias .cursos .item:nth-child(odd){
+    background: #003059;
+}
+
+.categorias .cursos .item:hover{
+    transform: scale(1.05);
+}
+
+.categorias .cursos .item .icon{
+    width: 75px;
+    height: 75px;
+    background: #7bceae;
+    border-radius: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.categorias .cursos .item h3{
+    color: #003059;
+    font-weight: 500;
+}
+
+.categorias .cursos .item:nth-child(odd) h3{
+    color: #fff;
+}
+
+/* AFILIADO */
+.afiliado{
+    align-items: center;
+    background: url(../img/bg-afiliado.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    padding: 50px 25px;
+}
+
+/* icon */
+.afiliado .icon{
+    width: 75px;
+    height: 75px;
+    margin-bottom: 25px;
+}
+
+/* info */
+.afiliado .info{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.afiliado .info h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.afiliado .info h3{
+    color: #eee;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.afiliado .info .btn-afiliado{
+    color: #fff;
+    background: #7bceae;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+/* topicos */
+.afiliado .topicos{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #fff;
+    padding: 50px 25px 0 25px;
+    margin-top: 50px;
+}
+
+.afiliado .topicos h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #003059;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.afiliado .topicos h3::before{
+    content: "";
+    width: 175px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    background: #7bceae;
+    transform: translate(-25px, -5px);
+    z-index: -1;
+}
+
+.afiliado .topicos h3 i{
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+/* item */
+.afiliado .topicos .item{
+    width: 175px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.afiliado .topicos .item p{
+    color: #003059;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+/* CONTATOS */
+.contato{
+    height: 700px;
+    align-items: flex-end;
+    background: url(../img/bg-contatos.png);
+    background-repeat: no-repeat;
+}
+
+/* info */
+.contato .info{
+    width: 700px;
+}
+
+.contato .info h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    z-index: 1;
+}
+
+.contato .info h1::before{
+    content: "";
+    width: 300px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    background: #003059;
+    transform: translate(-25px, 0px);
+    z-index: -1;
+}
+
+.contato .info h3{
+    width: 300px;
+    color: #003059;
+    font-size: 1rem;
+    font-weight: 500;
+    background: #fff;
+    border-bottom: 2px solid #7bceae;
+    padding: 10px 10px;
+    transform: translateX(-75px);
+    margin-bottom: 25px;
+}
+
+/* form */
+.contato .form{
+    width: 700px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 25px 0 0;
+}
+
+.contato .form .campo{
+    width: 45%;
+    margin: 0 0 25px 0;
+}
+
+.contato .form .campo:nth-child(5), .contato .form .campo:nth-child(6){
+    width: 100%;
+}
+
+/* FOOTER */
+.footer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #003059 url("../img/bg-footer.png");
+    padding: 50px;
+}
+
+.footer article{
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer article h3{
+    color: #003059;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
+    z-index: 0;
+}
+
+.footer article h3::before{
+    content: "";
+    width: 185px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    background: #7bceae;
+    transform: translate(-25px, 0px);
+    z-index: -1;
+}
+
+.footer article a{
+    display: inline;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer article a i{
+    font-size: 25px;
+    color: #7bceae;
+    margin-right: 15px;
+}
+
+/* telefone */
+.footer .endereco{
+    width: 200px;
+}
+
+/* endereco */
+.footer .endereco{
+    width: 200px;
+}
+
+.footer .endereco a{
+    line-height: 2;
+}
+
+/* facebook */
+.footer .facebook{
+    width: 325px;
+    align-items: flex-start;
+}
+
+/* MEDIAS */
+@media(max-width: 1000px){
+    /* MENU */
+    .menu{
+        justify-content: flex-end;
+        padding: 0;
+    }
+    /* guia */
+    .menu .guia{
+        display: none;
+    }
+
+    /* CONTAINER */
+    /* HOME */
+    .home .info{
+        width: 90%;
+    }
+    /* CATEGORIAS */
+    /* info */
+    .categorias .info{
+        width: 100%;
+    }
+    /* AFILIADO */
+    
+    /* CONTATO */
+    /* info */
+    .contato .info{
+        width: 500px;
+    }
+    /* form */
+    .contato .form{
+        width: 500px;
+    }
+    /* FOOTER */
+    /* telefone */
+    .footer .endereco{
+        width: 50%;
+    }
+    /* endereco */
+    .footer .endereco{
+        width: 50%;
+    }
+    /* facebook */
+    .footer .facebook{
+        width: 100%;
+    }
+}
+
+@media(max-width: 700px){
+    /* CONTAINER */
+    /* HOME */
+    .home{
+        height: 1000px;
+    }
+    /* bg */
+    .home .bg{
+        top: 500px;
+        left: 0vw;
+    }
+    /* CATEGORIAS */
+    /* info */
+    .categorias .info h1{
+        font-size: 1.5rem;
+    }
+    /* cursos */
+    .categorias .cursos{
+        margin-top: 50px;
+    }
+    /* CONTATO */
+    .contato{
+        margin-top: 0px;
+    }
+    /* info */
+    .contato .info{
+        width: 400px;
+    }
+    /* form */
+    .contato .form{
+        width: 400px;
+    }
+    /* FOOTER */
+    /* telefone */
+    .footer .endereco{
+        width: 100%;
+    }
+    /* endereco */
+    .footer .endereco{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    /* MENU */
+    .menu{
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .menu .logo img{
+        height: 45px;
+        margin: 0;
+        
+    }
+    /* HOME */
+    .home{
+        margin-top: 50px;
+    }
+    /* bg */
+    .home .bg{
+        left: -50px;
+    }
+    /* info */
+    .home .info{
+        width: 100%;
+        margin: 175px 0;
+    }
+    .home .info h1{
+        font-size: 2.5rem;
+    }
+    .home .info h3{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    /* CONTATO */
+    .contato{
+        height: auto;
+        padding-top: 50px;
+    }
+    /* info */
+    .contato .info{
+        width: 100%;
+    }
+    .contato .info h1{
+        font-size: 1.7rem;
+    }
+    .contato .info h3{
+        transform: translateX(25px);
+    }
+    /* form */
+    .contato .form{
+        width: 100%;
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .contato .form .campo{
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px){
+    /* HOME */
+    /* bg */
+    .home .bg{
+        top: 600px;
+        left: -200px;
+    }
+    /* CATEGORIAS */
+    /* cursos */
+    .categorias .cursos{
+        margin-top: 0;
+    }
+    /* FOOTER */
+    .footer{
+        padding: 50px 0;
+    }
+}
